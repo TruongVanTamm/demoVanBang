@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "@openzeppelin/contracts": "latest",
+    "@openzeppelin/contracts-upgradeable": "latest",
+    "@openzeppelin/hardhat-upgrades": "latest",
+    "hardhat-interface-generator": "latest",
+    "ipfs-http-client": "^60.0.1",
+    "web3": "latest",
+    "yargs": "latest"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "latest",
+    "@nomiclabs/hardhat-etherscan": "latest",
+    "@nomiclabs/hardhat-waffle": "latest",
+    "@nomiclabs/hardhat-web3": "latest",
+    "@openzeppelin/test-helpers": "latest",
+    "chai": "latest",
+    "dotenv": "latest",
+    "ethereum-waffle": "latest",
+    "ethers": "^5.4.7",
+    "hardhat": "^2.14.0",
+    "hardhat-contract-sizer": "latest"
+  }
+}
