@@ -2,8 +2,8 @@ import axios from 'axios';
 
 const IPFS_GATEWAY = 'https://gateway.pinata.cloud/ipfs/';
 const IPFS_PIN_HOST = 'https://api.pinata.cloud/pinning/';
-const API_KEY = '4b96899d48f0c349a9c9';
-const API_SECRET = '841e416c999c69629c1e584aa36200b621efd4caa222e3993aee286c017b9adb';
+const API_KEY = 'API_KEY ';
+const API_SECRET = 'API_SECRET';
 
 export const getIpfsUrl = (hash: string) => {
   return `${IPFS_GATEWAY}${hash}`;

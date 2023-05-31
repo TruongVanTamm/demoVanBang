@@ -12,7 +12,7 @@ export const connectMetamask = async () => {
 };
 
 export const bscTestnetProvider = new ethers.providers.JsonRpcProvider(
-  'https://wild-orbital-model.bsc-testnet.discover.quiknode.pro/aa89478019a31c076df02621a7d3ed7cc534c498/'
+  'web3provider'
 );
 export const collectionContract = new ethers.Contract(
   COLLECTION_ADDRESS,

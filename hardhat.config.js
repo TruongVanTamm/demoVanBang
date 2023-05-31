@@ -51,9 +51,9 @@ task("balance", "Prints an account's balance")
       from: Wallet
     },
     bsctest: {
-      url: `https://wild-orbital-model.bsc-testnet.discover.quiknode.pro/aa89478019a31c076df02621a7d3ed7cc534c498/`,
+      url: `Web3Provide`,
       chainId: 97,
-      accounts: [`fee3d798e44b9f170af682e105378d78483a36c9e7a17b09a6fa2376f4faf0c3`],
+      accounts: [`secretKey`],
     },
     mainnet: {
       url: "https://speedy-nodes-nyc.moralis.io/91997e089e13b6fc9afdc40b/bsc/mainnet",
