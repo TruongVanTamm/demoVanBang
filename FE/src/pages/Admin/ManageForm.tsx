@@ -53,22 +53,22 @@ const Manage = () => {
   return (
     <Layout>
       <Form form={form} layout={'vertical'} onFinish={onFinish}>
-        <Form.Item label="Số hiệu văn bằng" name="dipId" rules={[{ required: true }]}>
+        <Form.Item label="Số hiệu" name="dipId" rules={[{ required: true }]}>
           <Input />
         </Form.Item>
 
         <Form.Item
-          label="Họ tên sinh viên"
+          label="Họ tên và tên mẹ"
           name="name"
-          rules={[{ required: true, message: 'Vui lòng nhập số hiệu văn bằng!' }]}
+          rules={[{ required: true, message: 'Vui lòng nhập số hiệu !' }]}
         >
           <Input />
         </Form.Item>
 
         <Form.Item
-          label="Mã sinh viên"
+          label="Số CMND"
           name="studentId"
-          rules={[{ required: true, message: 'Vui lòng nhập số hiệu văn bằng!' }]}
+          rules={[{ required: true, message: 'Vui lòng nhập số hiệu !' }]}
         >
           <Input />
         </Form.Item>
@@ -76,7 +76,7 @@ const Manage = () => {
         <Form.Item
           label="Ngày cấp"
           name="createdAt"
-          rules={[{ required: true, message: 'Vui lòng nhập số hiệu văn bằng!' }]}
+          rules={[{ required: true, message: 'Vui lòng nhập số hiệu !' }]}
         >
           <DatePicker />
         </Form.Item>
@@ -85,7 +85,7 @@ const Manage = () => {
           <Input />
         </Form.Item>
 
-        <Form.Item name="upload" label="Văn bằng" rules={[{ required: true }]}>
+        <Form.Item name="upload" label="Giấy chứng sinh" rules={[{ required: true }]}>
           <Upload
             name="logo"
             beforeUpload={async (file) => {
@@ -126,7 +126,7 @@ const Manage = () => {
             htmlType={'submit'}
             disabled={loading}
           >
-            Lưu trữ văn bằng
+            Lưu trữ giấy chứng sinh
           </Button>
         </Form.Item>
       </Form>
