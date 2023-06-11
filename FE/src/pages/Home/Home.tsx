@@ -25,7 +25,7 @@ const Home = () => {
       <Box
         sx={{
           backgroundImage: `url(
-              "https://i.pinimg.com/originals/6d/d1/15/6dd11523d1b76662509e9a9c5909b2ca.png"
+              "https://img.thuthuatphanmem.vn/uploads/2018/10/22/simple-blue-wallpaper_012347170.jpg"
             )`,
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
@@ -42,8 +42,8 @@ const Home = () => {
                     activeKey={selectedTab}
                     onChange={(tab) => setSelectedTab(tab as TabName)}
                   >
-                    <TabPane key={'list'} tab={<span>Tìm kiếm theo mã sinh viên</span>} />
-                    <TabPane key={'find'} tab={<span>Tìm kiếm theo số hiệu văn bằng</span>} />
+                    <TabPane key={'list'} tab={<span>Tìm kiếm theo số CMND</span>} />
+                    <TabPane key={'find'} tab={<span>Tìm kiếm theo số hiệu</span>} />
                   </Tabs>
 
                   <div>

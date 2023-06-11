@@ -33,7 +33,7 @@ const ListForm = () => {
       key: 'dipId'
     },
     {
-      title: 'Tên sinh viên',
+      title: 'Họ và tên mẹ',
       dataIndex: 'name',
       key: 'name'
     },
@@ -44,7 +44,7 @@ const ListForm = () => {
       render: (text: any, { createdAt }: any) => createdAt
     },
     {
-      title: 'Văn bằng',
+      title: 'Giấy chứng sinh',
       dataIndex: 'ipfsHash',
       key: 'ipfsHash',
       render: (text: any, { ipfsHash }: any) => (
@@ -106,8 +106,8 @@ const ListForm = () => {
   return (
     <Layout>
       <Form form={form} layout={'vertical'} onFinish={onFinish}>
-        <Form.Item label="Mã sinh viên" required={true} name={'studentId'}>
-          <Input prefix={<UserIcon />} placeholder="Nhập mã sinh viên" />
+        <Form.Item label="Số CMND" required={true} name={'studentId'}>
+          <Input prefix={<UserIcon />} placeholder="Nhập số CMND" />
         </Form.Item>
         <div style={{ textAlign: 'center' }}>
           <Form.Item>

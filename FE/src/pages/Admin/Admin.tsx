@@ -33,7 +33,7 @@ const Admin = () => {
       <Box
         sx={{
           backgroundImage: `url(
-              "https://i.pinimg.com/originals/6d/d1/15/6dd11523d1b76662509e9a9c5909b2ca.png"
+              "https://img.thuthuatphanmem.vn/uploads/2018/10/22/simple-blue-wallpaper_012347170.jpg"
             )`,
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
@@ -52,13 +52,13 @@ const Admin = () => {
                     activeKey={selectedTab}
                     onChange={(tab) => setSelectedTab(tab as TabName)}
                   >
-                    <TabPane key={'list'} tab={<span>Danh sách văn bằng</span>} />
+                    <TabPane key={'list'} tab={<span>Danh sách giấy chứng sinh</span>} />
                     <TabPane
                       key={'manage'}
                       tab={
                         <span>
                           {' '}
-                          <LockOutlined /> Quản lý văn bằng
+                          <LockOutlined /> Quản lý giấy chứng sinh
                         </span>
                       }
                     />

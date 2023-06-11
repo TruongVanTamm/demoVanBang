@@ -44,7 +44,7 @@ const FindForm = () => {
       key: 'dipId'
     },
     {
-      title: 'Tên sinh viên',
+      title: 'Họ và tên mẹ',
       dataIndex: 'name',
       key: 'name'
     },
@@ -55,7 +55,7 @@ const FindForm = () => {
       render: (text: any, { createdAt }: any) => createdAt
     },
     {
-      title: 'Văn bằng',
+      title: 'Giấy chứng sinh',
       dataIndex: 'ipfsHash',
       key: 'ipfsHash',
       render: (text: any, { ipfsHash }: any) => (
@@ -103,8 +103,8 @@ const FindForm = () => {
   return (
     <Layout>
       <Form form={form} layout={'vertical'} onFinish={onFinish}>
-        <Form.Item label="Số hiệu văn bằng" required={true} name={'dipId'}>
-          <Input prefix={<InputIcon />} placeholder="Nhập số hiệu văn bằng" />
+        <Form.Item label="Số hiệu" required={true} name={'dipId'}>
+          <Input prefix={<InputIcon />} placeholder="Nhập số hiệu" />
         </Form.Item>
         {/* <Form.Item>
           <Button icon={<QrcodeOutlined />}>Quét mã QR</Button>
